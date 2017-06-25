@@ -1,0 +1,27 @@
+<!--
+  Created by Aravind for Mohelp demo,
+  Simple logs page with basic log function which lists the relavent operations in a list for diferrent requests made by user.
+ -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       MoHelp_Demo
+    </ion-title>     
+    <button ion-button color="danger" class="navbtn" (click)="clearLog()">
+        Clear
+    </button>  
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <h1>View logs list.</h1>
+	<ion-card>
+	    <ion-card-content>
+			  <button  ion-item *ngFor="let log of logs" (click) = "logSelected(log)" class = "log">
+          {{log.id}} {{log.text}} -> {{log.createdon}}
+         </button>
+		  </ion-card-content>
+	 </ion-card>
+
+</ion-content>

@@ -1,0 +1,34 @@
+<!--
+  Created by Aravind for Mohelp demo,
+  Simple reset password page with basic password reset function which default username admin.
+ -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       MoHelp_Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background">
+	<h1>You can reset your password</h1>
+	<ion-card>
+	    <ion-card-content>
+			<ion-list no-lines>
+			  	<ion-item>
+			  		<ion-label floating> Enter new Password </ion-label>
+			  		<ion-input type="Password" [(ngModel)]="newpwd" ></ion-input>
+			  	</ion-item>
+			  	<ion-item>
+			  		<ion-label floating> Retype new Password </ion-label>
+			  		<ion-input type="Password" [(ngModel)]="repwd"></ion-input>
+			  	</ion-item>
+          
+			  	<button ion-button class="resetBtn" color="danger" block outline (click)="updatePwd()">Reset</button>
+			</ion-list>
+      <p>Note -> by default user name is admin becasue, this is just a demo.</p>
+		</ion-card-content>
+	 </ion-card>
+
+</ion-content>

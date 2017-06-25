@@ -1,0 +1,46 @@
+<!--
+  Created by Aravind for Mohelp demo,
+  Simple login page with basic login and default username: admin and password: 12345.
+ -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       MoHelp_Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background">
+	<h1>Get the help you need, when you need it most.</h1>
+	<ion-card>
+    	<ion-card-header>Login please</ion-card-header>
+	    <ion-card-content>
+			<ion-list no-lines>
+			  	<ion-item>
+			  		<ion-label floating> User Name </ion-label>
+			  		<ion-input type="text" [(ngModel)]="username" ></ion-input>
+			  	</ion-item>
+			  	<ion-item>
+			  		<ion-label floating> Password </ion-label>
+			  		<ion-input type="Password" [(ngModel)]="password"></ion-input>
+			  	</ion-item>
+			  	<ion-item>
+			  		<p>Reset Password? <a href="#" (click)="resetPwd()">click here</a></p>
+			  	</ion-item>
+			  	<button ion-button color="danger" block outline (click)="login()">Login</button>
+			</ion-list>
+		<!--	<b>OR</b>
+			<button ion-button color="primary" ion-left block>
+				<ion-icon name="logo-facebook"></ion-icon>
+				<div>&nbsp;Login with facebook</div>
+			</button>
+
+			<button ion-button color="danger" ion-left block>
+				<ion-icon name="logo-google"></ion-icon>
+				<div>&nbsp;Login with google</div>
+			</button>-->
+		</ion-card-content>
+	 </ion-card>
+
+</ion-content>

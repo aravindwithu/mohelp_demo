@@ -1,0 +1,71 @@
+<!--
+  Created by Aravind for Mohelp demo,
+  Simple status page with basic status function to view detailed status of the request.
+ -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       MoHelp_Demo
+    </ion-title>
+    <button ion-button color="danger" class="navbtn" (click)="deleteLog()">
+        Delete
+    </button> 
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background">
+	<h1>Current status of the log.</h1>
+	<ion-card>
+	    <ion-card-content>
+
+        <div class = "divline row">
+          <div class = "col">
+            <ion-label> Category ID: </ion-label>
+          </div>
+          <div class = "col">
+          <ion-input class="input" type="text" readonly = "true" [(ngModel)] = "log.id"></ion-input>
+          </div>
+        </div>
+        
+        <div class = "divline row">
+          <div class = "col">
+            <ion-label> Category: </ion-label>
+          </div>
+          <div class = "col">
+            <ion-input type="text" readonly = "true" [(ngModel)] = "log.text"></ion-input>
+          </div>
+        </div>
+        
+        <div class = "divline row">
+          <div class = "col">
+            <ion-label> Created By: </ion-label>
+          </div>
+          <div class = "col">
+            <ion-input type="text" readonly = "true" [(ngModel)] = "log.createdby"></ion-input>
+          </div>
+        </div>
+
+        <div class = "row">
+          <ion-label> Created On:</ion-label>
+        </div>
+        <div class = "divline row">
+          <ion-input class="input" type="text" readonly = "true" [(ngModel)] = "log.createdon"></ion-input>	
+        </div>
+        
+        <div class = "row">
+          <div class = "col">
+            <ion-label> Status: </ion-label>
+          </div>
+          <div class = "col">
+            <ion-input type="text" readonly = "true" [(ngModel)] = "log.status"></ion-input>	
+          </div>
+        </div>
+         <div class = "divline row">
+          <p>Any update regarding the status will be updated here.
+        </div>
+        	
+		</ion-card-content>
+	 </ion-card>
+
+</ion-content>

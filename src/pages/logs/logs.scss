@@ -1,0 +1,35 @@
+page-logs {
+.background{
+  	width : 100%;
+  	height : 100%;
+  	background : linear-gradient(10deg, #4E5EFC, #4EE7FC);
+  }
+
+  .scroll-content{
+  	text-align: center;
+  }
+  
+  ion-card.card{
+  	background: rgba(232, 230, 230, 0.6px);
+  	border-radius: 10px;
+  }
+
+  .item{
+  	background: rgba(232, 230, 230, 0px);
+  }
+
+  .log{
+  	border-bottom: #FD4D73 solid 1px;
+    text-align: left;
+  }
+
+  .navbtn{
+      height: 1.5em;
+      float: right;
+  }
+
+   h1{
+  	color: #fff;
+  	font-size: 1.5em;
+   }
+}

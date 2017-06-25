@@ -1,0 +1,24 @@
+<!--
+  Created by Aravind for Mohelp demo,
+  Simple home page which lists the basic categories.
+ -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       MoHelp_Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <h1>Select a category of help.</h1>
+	<ion-card>
+	    <ion-card-content>
+			   <button  ion-item *ngFor="let category of categories" (click) = "categorySelected(category)" class = "category">
+          {{category.text}}
+         </button>
+		  </ion-card-content>
+	 </ion-card>
+
+</ion-content>
