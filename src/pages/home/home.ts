@@ -4,7 +4,7 @@
 */
 
 import { Component } from '@angular/core';
-import { NavController, App } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import {LoginPage} from '../login/login';
 import { LogsPage } from '../logs/logs';
 import { AlertController } from 'ionic-angular';
